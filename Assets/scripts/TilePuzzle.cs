@@ -8,7 +8,7 @@ public class TilePuzzle : MonoBehaviour
 {
     public static TilePuzzle Instance;
     
-    private int numTiles;
+    private int numTiles = 7;
 
     [SerializeField] private UnityEvent onPuzzleComplete;
 
@@ -24,10 +24,10 @@ public class TilePuzzle : MonoBehaviour
         Instance = this;
     }
 
-    public void AddTile()
+    /*public void AddTile()
     {
         numTiles++;
-    }
+    }*/
 
     public void ReportFoundTile()
     {
