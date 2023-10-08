@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3206076a82e2c498729d9b7228887e, type: 3}
+  m_Name: Good End
+  m_EditorClassIdentifier: 
+  dialogueStrings:
+  - "Hey Dad! It\u2019s been a few weeks, so I\u2019m just checking in."
+  - "The holidays are coming up quick, so I just wanted to make sure you\u2019re
+    still available for us to visit."
+  - "This has really been a great way for us to stay connected every year, so I\u2019m
+    really hoping you have time!"
+  - "The kids are excited too, visiting their grandpa\u2019s house is always fun
+    for them."
+  - Anyways, call me back when you can. Love you!
+  - 

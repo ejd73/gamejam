@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3206076a82e2c498729d9b7228887e, type: 3}
+  m_Name: Window
+  m_EditorClassIdentifier: 
+  dialogueStrings:
+  - 'I hate this yard. Do you know why I hate it? '
+  - " Because I haven\u2019t left this house in almost ten years.  "
+  - "I resent the grass and the breeze and the sun because I don\u2019t remember
+    how they feel.  "
+  - "Tomorrow morning, I\u2019ll get to go outside. And then I won\u2019t have to
+    see you anymore."
+  - "I\u2019ll abandon you like you abandoned me. Hah! How do you like that? Left
+    alone like I was."
+  - "Until then, I\u2019m stuck with you just like you are with me. "
+  - " Don\u2019t think I\u2019m happy with this little arrangement, I wish I got
+    to die without seeing your face again. "
+  - 
