@@ -17,6 +17,7 @@ public class MoveWheelChair : MonoBehaviour
     }
 
     void OnCollisionStay(Collision collision) {
+        //Debug.Log(collision.gameObject);
         if(collision.gameObject.tag == "wheelchair") {
             //Debug.Log(collision.gameObject);
             if(Input.GetKey(KeyCode.Space)) {
