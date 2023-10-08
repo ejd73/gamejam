@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3206076a82e2c498729d9b7228887e, type: 3}
+  m_Name: Mom Outro
+  m_EditorClassIdentifier: 
+  dialogueStrings:
+  - 'So you got into your room, did you? '
+  - "I want you to know\u2026 "
+  - I have regrets.
+  - "About what I did to you\u2026"
+  - and to him, too.
+  - "This hatred you hold for me\u2026"
+  - "I tried my best as a mother\u2026 "
+  - 'And as a wife. '
+  - "Your face\u2026 Don\u2019t look at me like that."
+  - Are you really that disgusted by me?
+  - Your own mother?
+  - Do...
+  - Do you hate me?
+  - "I\u2019m sorry. For what I did. Please\u2026 I want you to forgive me."
+  - 

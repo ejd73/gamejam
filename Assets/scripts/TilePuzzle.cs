@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 public class TilePuzzle : MonoBehaviour
 {
+    [SerializeField] private GameObject emptyImage;
+    [SerializeField] private GameObject fullImage;
+
     public static TilePuzzle Instance;
     
     private int numTiles = 7;
@@ -34,8 +37,27 @@ public class TilePuzzle : MonoBehaviour
         numFoundTiles++;
         if(numFoundTiles >= numTiles)
         {
+            SwitchImages(false);
             onPuzzleComplete?.Invoke();
             Debug.Log("Puzzle complete");
+        }
+        else
+        {
+            SwitchImages(true);
+        }
+    }
+
+    public void SwitchImages(bool empty)
+    {
+        if(empty)
+        {
+            emptyImage.SetActive(true);
+            fullImage.SetActive(false);
+        }
+        if(!empty)
+        {
+            emptyImage.SetActive(false);
+            fullImage.SetActive(true);
         }
     }
 }

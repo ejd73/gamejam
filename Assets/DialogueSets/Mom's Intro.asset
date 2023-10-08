@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3206076a82e2c498729d9b7228887e, type: 3}
+  m_Name: Mom's Intro
+  m_EditorClassIdentifier: 
+  dialogueStrings:
+  - Who's there? Who are you?
+  - Is that you, boy? Hah! Finally back after thirty years, are you? Because that
+    hag decided to quit on me, eh?
+  - "If you\u2019re here, it must be just about time. My last night in this shack,
+    is it?"
+  - "And then they\u2019ll take me away to some dank room."
+  - "And that\u2019s where I\u2019ll die. "
+  - No need to dwell on that. My son has returned. Oh, joy!
+  - " Did you miss your childhood home? It\u2019s certainly quiet here all by myself. "
+  - You look different, boy. Fatter. Like a pig. *laughs*
+  - "Your room isn\u2019t ready for you. I don\u2019t care to look at it anymore.
+    It\u2019s locked now."
+  - 'Well, if you have to stay here for my last night, you might as well reminisce
+    with your dear old mother. '
+  - "Take a look around your old home. I\u2019m sure you\u2019ll find lots of memories,
+    don\u2019t you? "
+  - 
