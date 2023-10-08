@@ -15,4 +15,18 @@ public class MoveWheelChair : MonoBehaviour
     {
         
     }
+
+    void OnCollisionStay(Collision collision) {
+        if(collision.gameObject.tag == "wheelchair") {
+            //Debug.Log(collision.gameObject);
+            if(Input.GetKey(KeyCode.Space)) {
+                
+                collision.gameObject.GetComponent<FixedJoint>().connectedBody = this.gameObject.GetComponent<Rigidbody>();
+            }
+            else {
+                collision.gameObject.GetComponent<FixedJoint>().connectedBody = null;
+            }
+        }
+    }
+
 }
