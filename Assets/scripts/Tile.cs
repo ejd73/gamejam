@@ -6,7 +6,7 @@ public class Tile : MonoBehaviour
 {
     private void Awake()
     {
-        TilePuzzle.Instance.AddTile();
+        //TilePuzzle.Instance.AddTile();
     }
 
     public void OnTileGrabbed()
