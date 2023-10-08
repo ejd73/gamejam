@@ -5,12 +5,8 @@ using UnityEngine;
 public class SoupController : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int foodcount;
-    
-    void Start()
-    {
-        foodcount = 0;
-    }
+    //private int foodcount;
+
 
     // Update is called once per frame
     void Update()
@@ -19,17 +15,11 @@ public class SoupController : MonoBehaviour
     }
 
     void OnCollisionStay(Collision collision) {
-        if(collision.gameObject.tag == "food") {
-            foodcount = foodcount + 1;
+        if(collision.gameObject.tag == "pot") {
+            CookingPuzzle.Instance.rightIng();
         }
     }
 
-    bool CorrectRecipe() {
-        if(foodcount == 4) {
-            return true;
-        }
-        return false;
-    }
 
 
 }
