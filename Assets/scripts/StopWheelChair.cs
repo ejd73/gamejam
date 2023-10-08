@@ -17,8 +17,9 @@ public class StopWheelChair : MonoBehaviour
     }
 
     void OnTriggerStay(Collider collision) {
+        //Debug.Log(collision.gameObject);
         if(collision.gameObject.tag == "wheelchair") {
-            //Debug.Log(collision.gameObject);
+            Debug.Log(collision.gameObject);
             collision.gameObject.GetComponent<FixedJoint>().connectedBody = null;
         }   
     }
