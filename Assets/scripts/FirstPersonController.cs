@@ -18,6 +18,8 @@ public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
 
+    private AudioSource as;
+
     #region Camera Movement Variables
 
     public Camera playerCamera;
@@ -136,6 +138,8 @@ public class FirstPersonController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         crosshairObject = GetComponentInChildren<Image>();
+
+        as = GetComponent<AudioSource>();
 
         // Set internal variables
         playerCamera.fieldOfView = fov;
@@ -501,6 +505,10 @@ public class FirstPersonController : MonoBehaviour
     {
         if(isWalking)
         {
+            if(!as.isPlaying()) {
+                as.Play();
+            }
+
             // Calculates HeadBob speed during sprint
             if(isSprinting)
             {
@@ -521,6 +529,7 @@ public class FirstPersonController : MonoBehaviour
         }
         else
         {
+            as.Stop();
             // Resets when play stops moving
             timer = 0;
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
