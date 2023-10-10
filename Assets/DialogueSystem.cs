@@ -16,16 +16,18 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(DialogueSet dialogueSet)
     {
+        Debug.Log("Activated!");
         foreach(string str in dialogueSet.dialogueStrings)
         {
             dialogueQueue.Enqueue(str);
         }
         dialogueSystemActive = true;
-        DisplayString(dialogueQueue.Dequeue());
+        //DisplayString(dialogueQueue.Dequeue());
     }
 
     private void DisplayString(string str)
     {
+        Debug.Log(str);
         background.gameObject.SetActive(true);
         dialogueText.gameObject.SetActive(true);
         dialogueText.text = str;

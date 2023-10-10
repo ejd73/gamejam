@@ -8,6 +8,7 @@ public class TilePuzzle : MonoBehaviour
 {
     [SerializeField] private GameObject emptyImage;
     [SerializeField] private GameObject fullImage;
+    [SerializeField] private GameObject keyToRoom;
 
     public static TilePuzzle Instance;
     
@@ -38,6 +39,7 @@ public class TilePuzzle : MonoBehaviour
         if(numFoundTiles >= numTiles)
         {
             SwitchImages(false);
+            DropKey();
             onPuzzleComplete?.Invoke();
             Debug.Log("Puzzle complete");
         }
@@ -59,5 +61,9 @@ public class TilePuzzle : MonoBehaviour
             emptyImage.SetActive(false);
             fullImage.SetActive(true);
         }
+    }
+    public void DropKey()
+    {
+        keyToRoom.SetActive(true);
     }
 }

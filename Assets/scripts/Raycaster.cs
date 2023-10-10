@@ -71,6 +71,7 @@ public class Raycaster : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("Picked up object");
                 heldObject = hoveredObject;
                 heldObject.OnPickup();
                 originalParent = heldObject.transform.parent;

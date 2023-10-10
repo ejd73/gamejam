@@ -50,6 +50,10 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+#Trying to get rid of git push issues
+*.exe 
+*.zip
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
